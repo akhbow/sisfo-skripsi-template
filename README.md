@@ -1,10 +1,8 @@
 # Template LaTeX Skripsi S1 Sistem Informasi UNDA
 
 Template naskah skripsi Program Studi S1 Sistem Informasi, Fakultas Ilmu
-Komputer, Universitas Darwan Ali (UNDA). Format dan struktur mengikuti *Buku
-Pedoman & Standar Riset Skripsi Sistem Informasi* (kurikulum OBE) dan *Buku
-Panduan Dosen Pembimbing dan Dewan Penguji Skripsi OBE*. Rincian setiap
-ketentuan beserta sumbernya ada di [`KETENTUAN.md`](KETENTUAN.md).
+Komputer, Universitas Darwan Ali (UNDA) berbasis kurikulum *Outcome-Based
+Education* (OBE).
 
 Anda cukup mengisi identitas dan isi bab. Seluruh tata letak (margin, huruf, spasi,
 penomoran, sampul, daftar isi, daftar pustaka) diatur secara otomatis oleh kelas
@@ -54,7 +52,6 @@ references.bib           basis data referensi (BibLaTeX, format IEEE, >= 30 entr
 figures/                 logo universitas dan gambar naskah
 scan/                    folder tempat berkas PDF hasil scan bertanda tangan / e-meterai
 main.pdf                 berkas PDF referensi hasil kompilasi bersih
-KETENTUAN.md             matriks ketentuan pedoman dan status keterpenuhan
 LICENSE                  lisensi LPPL 1.3c dan 3 klausul pengecualiannya
 ```
 
@@ -148,7 +145,7 @@ Opsi diatur pada baris pertama `main.tex`:
 
 | Versi | Tanggal | Perubahan |
 |---|---|---|
-| 1.0 | 2026-11-26 | Rilis perdana sesuai Buku Pedoman Riset Skripsi OBE dan Buku Panduan Dosen/Penguji. |
+| 1.0 | 2026-11-26 | Rilis perdana template skripsi S1 Sistem Informasi kurikulum OBE. |
 | 1.1 | 2026-11-26 | Pembaruan standar prodi: pembimbing tunggal (1 orang), penambahan Halaman Pernyataan Penggunaan Tools AI (dengan alokasi e-meterai Rp 10.000), penambahan kotak e-meterai pada Pernyataan Keaslian, Lampiran D (Similarity Score Turnitin), perluasan Daftar Pustaka minimal 30 entri (standar SINTA 3 & 5 tahun terakhir), dukungan repositori GitHub & Mendeley Data pada Lampiran C, perintah `\sisipkanhalaman` untuk scan lembar bertanda tangan, proteksi margin ketat (`\emergencystretch 3em`), pelestarian cetak miring (*italic*) pada istilah asing di judul, dan pengumuman wajib watermark publikasi. |
 
 ### Lisensi
