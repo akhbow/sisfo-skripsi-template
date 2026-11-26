@@ -52,7 +52,8 @@ chapters/bab1.tex ...    BAB I sampai BAB V
 backmatter/              daftar pustaka dan lampiran A, B, C (kode/repositori), D (similarity)
 references.bib           basis data referensi (BibLaTeX, format IEEE, >= 30 entri)
 figures/                 logo universitas dan gambar naskah
-verifikasi/              bukti render visual dokumen hasil uji (150 DPI)
+scan/                    folder tempat berkas PDF hasil scan bertanda tangan / e-meterai
+main.pdf                 berkas PDF referensi hasil kompilasi bersih
 KETENTUAN.md             matriks ketentuan pedoman dan status keterpenuhan
 LICENSE                  lisensi LPPL 1.3c dan 3 klausul pengecualiannya
 ```
