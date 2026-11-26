@@ -13,7 +13,7 @@ penomoran, sampul, daftar isi, daftar pustaka) diatur secara otomatis oleh kelas
 ## Ketentuan Khusus Prodi Sistem Informasi UNDA
 
 1. **Dosen Pembimbing:** Di Prodi Sistem Informasi UNDA, dosen pembimbing naskah skripsi adalah **1 orang** (pembimbing tunggal).
-2. **Dewan Penguji Sidang Akhir:** Standar naskah skripsi final memuat **2 orang penguji**: Ketua Penguji (Penguji I) dan Anggota Penguji (Penguji II). Pengesahan naskah skripsi final disahkan oleh **Ketua Program Studi** (bukan Dekan).
+2. **Dewan Penguji Sidang Akhir:** Standar naskah skripsi final memuat **2 orang penguji**: Ketua Penguji (Penguji I) dan Anggota Penguji (Penguji II). Pengesahan naskah skripsi final disahkan oleh **Ketua Program Studi**.
 3. **Kewajiban e-Meterai Rp 10.000:** Ada **dua bagian** yang WAJIB dibubuhi e-meterai Rp 10.000 dan tanda tangan mahasiswa:
    - **Halaman Pernyataan Keaslian Skripsi** (`frontmatter/pernyataan.tex`)
    - **Halaman Pernyataan Penggunaan Tools AI** (`frontmatter/pernyataan-ai.tex`)
