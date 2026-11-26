@@ -1,0 +1,44 @@
+% =====================================================================
+%  backmatter/lampiran-c.tex
+%  Lampiran C: Kode Sumber Utama dan Repositori Data Penelitian.
+% =====================================================================
+\lampiran[lamp:kode]{Kode Sumber Utama dan Repositori Data Penelitian}
+
+\panduan{Ketentuan Repositori dan Kode Sumber:
+Sesuai standar riset program studi, mahasiswa WAJIB mengunggah:
+(1) Kode sumber lengkap ke repositori publik GitHub, dilengkapi README.md dan dokumentasi instalasi;
+(2) Dataset mentah, hasil pengolahan, dan metadata riset ke repositori data ilmiah resmi (Mendeley Data atau Zenodo) sehingga memiliki persistent identifier (DOI).
+Pada naskah cetak skripsi, mahasiswa hanya mencantumkan tautan repositori serta potongan kode algoritma inti, bukan seluruh baris kode aplikasi.}
+
+\noindent Informasi repositori resmi untuk penelitian ini adalah sebagai berikut:
+\begin{enumerate}[noitemsep,topsep=3pt,leftmargin=1.5em]
+  \item \textbf{Repositori Kode Sumber Utama (GitHub):}\\
+        \url{\tautanrepogithub}
+  \item \textbf{Repositori Dataset dan Artefak Penelitian (Mendeley Data):}\\
+        \url{\tautanrepomendeley}
+\end{enumerate}
+
+\vspace{0.8\baselineskip}
+\noindent Potongan kode program utama untuk perhitungan metrik evaluasi kegunaan sistem disajikan pada Kode~\ref{kode:sus}, yang mengimplementasikan Algoritma~\ref{alg:sus}.
+
+\begin{lstlisting}[language=Python,caption={Implementasi Algoritma Perhitungan Skor SUS pada Backend Aplikasi},label={kode:sus}]
+def hitung_skor_sus(jawaban_responden):
+    """
+    Menghitung skor System Usability Scale (SUS) skala 0-100
+    berdasarkan 10 butir pertanyaan dengan skala Likert 1-5.
+    """
+    if len(jawaban_responden) != 10:
+        raise ValueError("Instrumen SUS mewajibkan tepat 10 butir respons.")
+    
+    total_skor = 0
+    for nomor_butir, nilai in enumerate(jawaban_responden, start=1):
+        if nomor_butir % 2 == 1:
+            # Butir bernomor ganjil (pernyataan positif): nilai - 1
+            total_skor += (nilai - 1)
+        else:
+            # Butir bernomor genap (pernyataan negatif): 5 - nilai
+            total_skor += (5 - nilai)
+            
+    # Nilai akhir dikalikan 2.5 untuk konversi rentang 0-100
+    return float(total_skor * 2.5)
+\end{lstlisting}

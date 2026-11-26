@@ -1,0 +1,60 @@
+% =====================================================================
+%  main.tex: Template Skripsi S1 Sistem Informasi UNDA
+%  Disusun oleh: Dr. Dwi Wahyu Prabowo, S.Si., M.Eng.
+%  Copyright (C) 2026 Dr. Dwi Wahyu Prabowo, S.Si., M.Eng.
+%  Lisensi LaTeX Project Public License (LPPL) 1.3c atau lebih baru:
+%  https://www.latex-project.org/lppl.txt
+%  Status LPPL: maintained. Isi skripsi tetap milik mahasiswa penulisnya.
+% =====================================================================
+%
+%  PENGUMUMAN PENTING (ATURAN WATERMARK PUBLIKASI / ARSIP):
+%  Jika naskah skripsi SUDAH LULUS SIDANG AKHIR dan telah MENDAPATKAN
+%  PENGESAHAN resmi dari Dosen Pembimbing, Dewan Penguji, dan Ketua Program Studi,
+%  maka opsi WATERMARK WAJIB DIHIDUPKAN pada baris \documentclass di bawah:
+%      \documentclass[watermark=isi,panduan=false]{unda-skripsi}
+%      atau
+%      \documentclass[watermark=semua,panduan=false]{unda-skripsi}
+%  Watermark bawaan berposisi di tengah dengan opacity rendah (0.06--0.08)
+%  sehingga tidak mengganggu keterbacaan naskah ilmiah.
+% =====================================================================
+%
+% Kompilasi: latexmk -xelatex main.tex
+% Opsi kelas:
+%   watermark = tidak | sampul | awal | isi | semua   (bawaan: tidak)
+%   panduan   = true | false   (false menyembunyikan seluruh kotak panduan)
+\documentclass[watermark=tidak,panduan=true]{unda-skripsi}
+
+\input{config/identitas}
+% Penyetelan parameter watermark tambahan (bila diperlukan):
+% \setwatermark{opacity=0.06, scale=0.5, posisi=tengah}% posisi: tengah | kanan-bawah | kiri-atas
+
+\begin{document}
+
+% ---- Bagian awal (nomor halaman Romawi kecil) ----
+\input{frontmatter/sampul}
+\input{frontmatter/halaman-judul}
+\input{frontmatter/pengesahan}
+\input{frontmatter/persetujuan}
+\input{frontmatter/pernyataan}
+\input{frontmatter/pernyataan-ai}
+\input{frontmatter/abstrak}
+\input{frontmatter/abstract}
+\input{frontmatter/kata-pengantar}
+\input{frontmatter/daftar}
+\input{frontmatter/daftar-lambang}
+
+% ---- Bagian inti (nomor halaman Arab mulai BAB I) ----
+\include{chapters/bab1}
+\include{chapters/bab2}
+\include{chapters/bab3}
+\include{chapters/bab4}
+\include{chapters/bab5}
+
+% ---- Bagian akhir ----
+\include{backmatter/daftar-pustaka}
+\include{backmatter/lampiran-a}
+\include{backmatter/lampiran-b}
+\include{backmatter/lampiran-c}
+\include{backmatter/lampiran-d}
+
+\end{document}

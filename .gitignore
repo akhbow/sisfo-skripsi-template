@@ -1,0 +1,33 @@
+# LaTeX compilation artifacts
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.fdb_latexmk
+*.fls
+*.idx
+*.ilg
+*.ind
+*.lam
+*.lof
+*.log
+*.lot
+*.nav
+*.out
+*.run.xml
+*.snm
+*.synctex(busy)
+*.synctex.gz
+*.toc
+*.vrb
+*.xdv
+*.upa
+*.upb
+
+# OS / Editor temporary files
+.DS_Store
+Thumbs.db
+*~
+*.swp
+.vscode/
+.idea/

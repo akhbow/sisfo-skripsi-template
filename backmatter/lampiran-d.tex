@@ -1,0 +1,51 @@
+% =====================================================================
+%  backmatter/lampiran-d.tex
+%  Lampiran D: Hasil Pengecekan Similaritas (Similarity Score).
+% =====================================================================
+\lampiran[lamp:similarity]{Hasil Pengecekan Similaritas (Similarity Score)}
+
+\panduan{Ketentuan Uji Similaritas Skripsi di Fakultas Ilmu Komputer Universitas Darwan Ali:
+Setiap naskah skripsi yang diajukan untuk Sidang Akhir dan publikasi akhir wajib melalui
+uji similaritas menggunakan perangkat lunak resmi (Turnitin / iThenticate) dengan ketentuan:
+(1) Indeks similaritas total maksimal 20\%;
+(2) Filter pengecualian aktif untuk Daftar Pustaka (\textit{Exclude Bibliography}) dan kutipan langsung (\textit{Exclude Quotes});
+(3) Tidak ditemukan satu pun sumber tunggal yang melebihi 3\% kemiripan;
+(4) Mahasiswa wajib melampirkan lembar rekapitulasi dan/atau bukti \textit{Digital Receipt} Turnitin pada lampiran ini.}
+
+\noindent Tabel~\ref{tab:similarity-summary} menyajikan rekapitulasi hasil pemeriksaan indeks kesamaan naskah skripsi menggunakan sistem Turnitin.
+
+\begin{table}[htbp]
+  \caption{Rekapitulasi Hasil Uji Similaritas Naskah Skripsi}
+  \label{tab:similarity-summary}
+  \centering\small
+  \begin{tabularx}{\textwidth}{@{}c >{\raggedright\arraybackslash}X c c >{\raggedright\arraybackslash}p{3.2cm}@{}}
+    \toprule
+    No. & Bagian Naskah & Halaman & Indeks & Keterangan\\
+    \midrule
+    1. & Bab I: Pendahuluan & 1--3 & 10\% & Memenuhi Syarat\\
+    2. & Bab II: Tinjauan Pustaka & 4--8 & 15\% & Memenuhi Syarat\\
+    3. & Bab III: Metodologi Penelitian & 9--13 & 12\% & Memenuhi Syarat\\
+    4. & Bab IV: Hasil dan Pembahasan & 14--20 & 8\% & Memenuhi Syarat\\
+    5. & Bab V: Kesimpulan dan Saran & 21--22 & 4\% & Memenuhi Syarat\\
+    \midrule
+    \multicolumn{3}{@{}l}{\textbf{Indeks Similaritas Keseluruhan (Total)}} & \textbf{14\%} & \textbf{Lolos (Maks. 20\%)}\\
+    \bottomrule
+  \end{tabularx}
+\end{table}
+
+\noindent Catatan pengujian similaritas:
+\begin{enumerate}[noitemsep,topsep=2pt,leftmargin=1.5em]
+  \item Perangkat lunak penguji: Turnitin Feedback Studio (Lisensi Universitas Darwan Ali).
+  \item Tanggal pengujian terakhir: 20 Desember 2026.
+  \item ID Pengajuan (\textit{Submission ID}): 2294810294.
+  \item Jumlah kata terperiksa: 7.840 kata.
+  \item Ambang batas kelulusan Fakultas Ilmu Komputer UNDA: Maksimal 20\%.
+\end{enumerate}
+
+\vspace{1\baselineskip}
+\noindent\textbf{Petunjuk Penyisipan Berkas Laporan Turnitin:}\\
+Untuk menyisipkan lembar cetak \textit{Digital Receipt} Turnitin asli (1--2 halaman PDF) ke dalam naskah ini, gunakan perintah:
+\begin{lstlisting}[language=TeX,caption={Penyisipan Laporan Turnitin Menggunakan pdfpages}]
+% Sisipkan halaman PDF bukti receipt Turnitin setelah tabel di atas:
+% \sisipkanhalaman[plain]{scan/turnitin-receipt.pdf}
+\end{lstlisting}
